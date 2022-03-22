@@ -2,12 +2,12 @@ package lab1;
 import java.util.Scanner;
 /*
  * 		Name: Sujun Kim
- * 		Class: CECS378 Sec 03 11544
+ * 		Class: CECS378 Sec 03 11471
  * 		ID : 028945720
  * 
  * 		This program encodes message based on key given 
  */
-public class encoder {
+public class encoder { 
 	public static String takeInput() { // asks user for input and return that to bestored or encoded
 		String message = "";
 		Scanner in = new Scanner(System.in);
