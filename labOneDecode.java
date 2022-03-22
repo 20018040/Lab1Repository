@@ -24,7 +24,7 @@ public class labOneDecode {
 				
 		}
 	}
-	public static void frequency() { 
+	public static void frequency() {  // after counting finds frequency
 		int[][]temp = new int[26][1]; 
 		for (int i = 0 ;i <26;i++) {
 			temp[i][0] = wordcount[i][0];
@@ -96,7 +96,7 @@ public class labOneDecode {
 		
 		return encode((char)(place+97),message);
 	}
-	public static int commonWords(String message) {
+	public static int commonWords(String message) { // finds the number of common words in message
 		int x = 0;
 		String commons[] = {"the","what","and", "there", "about","that","this","you","to","be", "in", "have", "for"};
 		for(String common : commons) {
