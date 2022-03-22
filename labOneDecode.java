@@ -3,7 +3,7 @@ package lab1;
  * 		Name: Sujun Kim
  * 		Class: CECS378 Sec 03 11544
  * 		ID : 028945720
- * 
+ *  
  *		This program encodes and decodes encrypted messages.
  *		It counts how many letter of each alphabets are in a message
  *		order those number in descending orders
@@ -12,9 +12,9 @@ package lab1;
  * 
  */
 public class labOneDecode {
-	static int [][]wordcount = new int [26][1];
-	static char []mostFrequent = new char[26];
-	public static void count(String message) {
+	static int [][]wordcount = new int [26][1];// list to keep track of alphabet counts
+	static char []mostFrequent = new char[26]; //lists alphabets in most frequently used 
+	public static void count(String message) { // counts number of each alphabet in message
 		message = message.toLowerCase();
 		for (int i = 0; i< message.length();i++) {
 			char alpha = message.charAt(i);
@@ -24,7 +24,7 @@ public class labOneDecode {
 				
 		}
 	}
-	public static void frequency() {
+	public static void frequency() { 
 		int[][]temp = new int[26][1]; 
 		for (int i = 0 ;i <26;i++) {
 			temp[i][0] = wordcount[i][0];
